@@ -1,10 +1,81 @@
 * {
   font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  color: white;
   padding: 0;
   margin: 0 auto;
 }
 
 * h1 {
   font-family: 'Poppins', sans-serif;
+  font-size: 2.5rem;
+}
+
+* p {
+  font-size: 1rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  background-image: url(/images/bg-desktop.svg);
+  background-color: #674baf;
+  background-repeat: no-repeat;
+}
+
+.header {
+  margin-bottom: 5%;
+}
+
+.container {
+  margin-inline: 5rem;
+  padding: 2% 0;
+}
+
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 100%;
+  gap: 5rem;
+}
+
+@media (max-width: 71.25rem) {
+  .content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.content .left {
+  min-width: 50%;
+}
+
+.content .left img {
+  max-width: 100%;
+}
+
+.content .right {
+  display: block;
+  margin: auto 0;
+  max-width: 50%;
+}
+
+.content .right .button {
+  padding: 2em 0;
+}
+
+.content .right .button a {
+  padding: 0.85rem 3.8rem;
+  background: white;
+  color: #674baf;
+  border-radius: 50rem;
+  text-decoration: none;
+  -webkit-box-shadow: 0px 5px 15px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 5px 15px 5px rgba(0, 0, 0, 0.3);
 }
 /*# sourceMappingURL=style.css.map */
