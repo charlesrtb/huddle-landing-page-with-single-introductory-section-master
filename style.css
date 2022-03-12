@@ -124,4 +124,33 @@ body {
   background-color: #e882e8;
   color: white;
 }
+
+.social-icons {
+  text-align: right;
+  margin-top: 3.5rem;
+}
+
+@media (max-width: 74.75rem) {
+  .social-icons {
+    text-align: center;
+  }
+}
+
+.icon {
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 0.5em;
+  border: 2px solid currentColor;
+  border-radius: 2em;
+  cursor: pointer;
+  -webkit-transition: 200ms;
+  transition: 200ms;
+  -webkit-margin-end: 0.5em;
+          margin-inline-end: 0.5em;
+}
+
+.icon:hover {
+  color: #e882e8;
+}
 /*# sourceMappingURL=style.css.map */

@@ -97,3 +97,29 @@ body {
         }
     }
 }
+
+.social-icons {
+    text-align: right;
+    margin-top: 3.5rem;
+
+    @media (max-width: 74.75rem) {
+        text-align: center;
+    }
+}
+
+.icon {
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 0.5em;
+    border: 2px solid currentColor;
+    border-radius: 2em;
+    cursor: pointer;
+    transition: 200ms;
+    margin-inline-end: 0.5em;
+
+    &:hover {
+        color:hsl(300, 69%, 71%)
+    }
+
+}
