@@ -15,6 +15,10 @@
   font-size: 1rem;
 }
 
+* a {
+  font-family: 'Poppins', sans-serif;
+}
+
 img {
   max-width: 100%;
 }
@@ -23,6 +27,14 @@ body {
   background-image: url(/images/bg-desktop.svg);
   background-color: #674baf;
   background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 74.75rem) {
+  body {
+    background-image: url(/images/bg-mobile.svg);
+    background-size: 100%;
+  }
 }
 
 .header {
@@ -42,7 +54,7 @@ body {
   gap: 5rem;
 }
 
-@media (max-width: 71.25rem) {
+@media (max-width: 74.75rem) {
   .content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -62,11 +74,38 @@ body {
 .content .right {
   display: block;
   margin: auto 0;
-  max-width: 50%;
+}
+
+@media (max-width: 74.75rem) {
+  .content .right {
+    min-width: 100%;
+  }
+}
+
+.content .right .text h1, .content .right .text p {
+  line-height: 1.45em;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 74.75rem) {
+  .content .right .text h1, .content .right .text p {
+    text-align: center;
+  }
 }
 
 .content .right .button {
   padding: 2em 0;
+}
+
+@media (max-width: 74.75rem) {
+  .content .right .button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .content .right .button a {
@@ -77,5 +116,12 @@ body {
   text-decoration: none;
   -webkit-box-shadow: 0px 5px 15px 5px rgba(0, 0, 0, 0.3);
           box-shadow: 0px 5px 15px 5px rgba(0, 0, 0, 0.3);
+  -webkit-transition: 250ms;
+  transition: 250ms;
+}
+
+.content .right .button a:hover {
+  background-color: #e882e8;
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */
