@@ -41,7 +41,7 @@ body {
   padding: 0;
 }
 
-.header img {
+.header svg {
   width: 50%;
   max-width: 20rem;
 }
@@ -75,7 +75,7 @@ body {
   min-width: 50%;
 }
 
-.content .left img {
+.content .left svg {
   max-width: 100%;
 }
 
