@@ -3,7 +3,6 @@
     font-size: 16px;
     color: white;
     padding: 0;
-    margin: 0 auto;
     h1 {
         font-family: 'Poppins', sans-serif;
         font-size: 2.5rem;   
@@ -33,7 +32,14 @@ body {
 }
 
 .header {
-    margin-bottom: 5%;
+    // margin-bottom: 15%;
+    max-width: 100%;
+    padding:0;
+
+    img {
+        width: 50%;
+        max-width: 20rem;
+    }
 }
 
 .container {
@@ -44,9 +50,12 @@ body {
 .content {
     display: flex;
     max-width: 100%;
-    gap: 5rem;
+    gap: 4.5rem;
+    margin: 2% auto;
     @media (max-width:74.75rem) {
         flex-direction: column;
+        gap: 2rem;
+        margin-top: 2rem;
     }
 
     .left {
@@ -109,7 +118,7 @@ body {
 
 .icon {
     color: white;
-    font-size: 2rem;
+    font-size: 1.75rem;
     font-weight: bold;
     padding: 0.5em;
     border: 2px solid currentColor;
