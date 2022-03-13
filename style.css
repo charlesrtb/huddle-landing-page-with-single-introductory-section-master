@@ -23,7 +23,7 @@ img {
 }
 
 body {
-  background-image: url(/images/bg-desktop.svg);
+  background-image: url(images/bg-desktop.svg);
   background-color: #674baf;
   background-repeat: no-repeat;
   background-size: cover;
@@ -31,7 +31,7 @@ body {
 
 @media (max-width: 74.75rem) {
   body {
-    background-image: url(/images/bg-mobile.svg);
+    background-image: url(images/bg-mobile.svg);
     background-size: 100%;
   }
 }
